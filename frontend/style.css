@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body{
+    background-color: whitesmoke;
+}
+.headerWrapper{
+    text-align: center;
+    padding: 24px;
+    font-weight: 500;
+    margin: 20px 0px;
+}
+
+.searchFormWrapper{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+#inputField {
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 0px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+#searchBtn {
+    background-color: #1c6fff;
+    color:white;
+    border: 0px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#searchBtn:hover {
+    transition: 0.3s ease;
+    background-color: #0f3475 !important;
+}
+
+.note{
+    font-size: 12px;
+    text-align: center;
+    margin-top: -25px;
+    margin-bottom: 40px;
+}
+
+.loadingContainer{
+    display: none;
+    text-align: center;
+    font-weight: 500;
+}
+
+.product{
+    background-color: white;
+    width: 1000px;
+    display: flex;
+    justify-content: flex-start ;
+    align-items: center;
+    padding: 25px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.rightCon{
+    padding: 0px 20px;
+}
+
+.productDetails{
+    padding-bottom: 20px;
+}
+
+.productTitle{
+    overflow: hidden;
+    display: flex;
+    text-wrap: wrap;
+    max-width: 700px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: justify
+}
+
+.productRating, .productReviews {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.productImage img{
+    width: 210px;
+}
+
+
+.actionBtns {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.actionBtns #viewBtn {
+    background-color: #1c6fff;
+    color:white;
+    border: 0px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.actionBtns #viewBtn:hover {
+    transition: 0.3s ease;
+    background-color: #0f3475 !important;
+}
+
+.resultDetails{
+    text-align: center;
+}
+
+@media only screen and (max-width: 1050px) {
+    .product{
+        width: 700px;
+    }
+
+    .productTitle{
+
+        max-width: 500px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .product{
+        width: 90%;
+    }
+
+    .productTitle{
+        font-size: 14px;
+        max-width: 300px;
+    }
+}
+
+
+@media only screen and (max-width: 550px) {
+    .product{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .productTitle{
+        padding-top: 20px;
+        font-size: 14px;
+        max-width: 500px;
+    }
+
+    .productRating, .productReviews {
+        font-size: 14px;
+    }
+}
